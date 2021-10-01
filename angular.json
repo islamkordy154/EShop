@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "EShop": {
@@ -24,9 +24,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/fontawesome.css",
+              "src/assets/css/tooplate-main.css",
+              "src/assets/css/owl.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/custom.js",
+              "src/assets/js/owl.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EShop"
+    }
+  },
+  "defaultProject": "EShop",
+  "cli": {
+    "analytics": "8ec225aa-88fd-4a24-89fe-5a24ffc2fb97"
+  }
 }
